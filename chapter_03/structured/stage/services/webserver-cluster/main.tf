@@ -7,7 +7,7 @@ terraform {
     # bucket is defined similarly in s3/main.tf and terraform {}
     bucket = "statev5.thetastack.co.uk"
     region = "eu-west-1"
-    key = "stage/terraform.tfstate"
+    key = "stage/services/webserver-cluster/terraform.tfstate"
     dynamodb_table = "terraform-lock-stage"
     encrypt = true
   }
