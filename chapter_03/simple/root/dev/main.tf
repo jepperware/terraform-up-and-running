@@ -1,12 +1,6 @@
 terraform {
-  backend "s3" {
-    # bucket is defined similarly in s3/main.tf
-    bucket = "statev3.thetastack.co.uk"
-    region = "eu-west-1"
-    key = "dev/terraform.tfstate"
-    dynamodb_table = "terraform-lock-dev"
-    encrypt = true
-  }
+  # The configuration for this backend will be filled in by Terragrunt
+  backend "s3" {}
 }
 
 provider "aws" {
